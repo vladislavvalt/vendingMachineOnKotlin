@@ -14,9 +14,11 @@ interface VendingMachine {
 
     fun clickNumberButton(number: Int)
 
-    fun clickBuyButton()
+    fun clickBuyButton(): Boolean
 
     fun clickCancelButton()
 
-    fun checkChangeCompartment(): List<Banknote>
+    fun retrievePurchasedProduct(): Product?
+
+    fun retrieveChange(): List<Banknote>
 }
